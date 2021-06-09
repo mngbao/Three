@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Black.woff2') format('woff2'),
+        url('PlayfairDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url('Mulish-Light.woff2') format('woff2'),
+        url('Mulish-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url('Mulish-Regular.woff2') format('woff2'),
+        url('Mulish-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url('Mulish-Black.woff2') format('woff2'),
+        url('Mulish-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

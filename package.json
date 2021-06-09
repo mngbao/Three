@@ -1,0 +1,29 @@
+{
+  "name": "three",
+  "version": "1.0.0",
+  "description": "Three landing page",
+  "main": "gruntfile.js",
+  "dependencies": {
+    "grunt": "^1.2.1",
+    "grunt-contrib-uglify": "^5.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "load-grunt-tasks": "^5.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mngbao/Three.git"
+  },
+  "author": "Bao Mai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mngbao/Three/issues"
+  },
+  "homepage": "https://github.com/mngbao/Three#readme"
+}
