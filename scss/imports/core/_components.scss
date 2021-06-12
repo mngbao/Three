@@ -1,1 +1,94 @@
 // css components
+.project__text {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 200px;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+
+    .upper {
+      @include text(40px, mb, $lh-text, $text-cl, uppercase);
+      letter-spacing: 12px;
+    }
+    .lower {
+      @include text(72px, pdb, 1, $text-cl, uppercase);
+      letter-spacing: 0px;
+    }
+    &::before {
+      content: "";
+      background-color: $green-cl;
+      height: 90%;
+      width: 2px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      @include transform(translateY(-50%));
+    }
+  }
+  .right {
+    @include text(14px, mr, 1.8, $sec-text-cl, null);
+  }
+}
+
+.container {
+  .slider__info {
+    background-color: #fff;
+    padding: 105px;
+    display: flex;
+    flex-direction: column;
+    height: 720px;
+    &-control {
+      position: absolute;
+      left: 70px;
+      top: 50%;
+      @include transform(translateY(-50%));
+      .btn {
+        svg {
+          padding: 10px;
+        }
+      }
+    }
+    &-text {
+      display: flex;
+      flex-direction: column;
+      .title {
+        @include text(40px, pdb, 1.2, $text-cl, uppercase);
+      }
+      .subtitle {
+        margin: 20px 0;
+        @include text($fz-text, mb, 1.2, $green-cl, uppercase);
+      }
+      .text {
+        @include text(16px, mr, 1.5, $sec-text-cl, initial);
+      }
+    }
+    &-button {
+      width: 200px;
+      border: 2px solid $green-cl;
+      font-size: 13px;
+      text-align: center;
+      text-decoration: none;
+      font-family: mb;
+      padding: 15px;
+      margin-top: 40px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+  }
+  .slider__wrapper {
+    position: absolute;
+    right: 0;
+    height: 720px;
+    width: 50%;
+    .thumb0 {
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+      @include midimg(720px);
+    }
+  }
+}

@@ -1,1 +1,87 @@
 // css footer
+footer {
+  width: 100%;
+  height: 500px;
+  background: url(../../../img/three-footer.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon__item {
+      margin: 0 30px;
+      cursor: pointer;
+      svg {
+        path {
+          fill: $green-cl;
+        }
+      }
+      &:hover {
+        svg {
+          path {
+            fill: $white-cl;
+          }
+        }
+      }
+    }
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    margin: 30px 0;
+    position: relative;
+    li {
+      padding: 10px 30px;
+      a {
+        color: $white-cl;
+        text-decoration: none;
+        font-family: mb;
+        font-size: 10px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        &::after {
+          content: "";
+          width: 100%;
+          height: 2px;
+          background-color: $green-cl;
+          position: absolute;
+          bottom: -10px;
+          display: none;
+        }
+      }
+      &:hover {
+        a {
+          &::after {
+            display: block;
+          }
+        }
+      }
+    }
+    &::before,
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $main-bg-cl;
+
+      position: absolute;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+  }
+  .copyright {
+    color: $white-cl;
+    text-align: center;
+    padding: 0 300px;
+  }
+}

@@ -1,32 +1,192 @@
 // CSS HOMEPAGE
 
- .head{
-    height: 100%;
+.head {
+  height: 100%;
+  width: 100%;
+  .head__wrap {
+    position: relative;
+    height: 100vh;
     width: 100%;
-    .head__wrap{
-        position: relative;
-        height: 100vh;
-        width: 100%;
-        overflow: hidden;
-        .bgimg{
-            height: 100%;
-            width: 100%;
-            overflow: hidden;
-            @include midimg;
-
-        }
-        &-text{
-            position: absolute;
-            @include mid(false);
-            color: $white-cl;
-            font-family: mb;
-            font-size: 4.5rem;
-            letter-spacing: 1.5rem;
-            text-transform: uppercase;
-            z-index: 199;
-        }
-        
-        
+    overflow: hidden;
+    .bgimg {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      @include midimg;
     }
+    &-text {
+      position: absolute;
+      @include mid(false);
+      color: $white-cl;
+      font-family: mb;
+      font-size: 80px;
+      line-height: 0.288;
+      letter-spacing: 30px;
+      text-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
+      text-transform: uppercase;
+      z-index: 199;
+    }
+  }
 }
-  
+
+.slider {
+  position: relative;
+  background-color: $main-bg-cl;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 720px;
+    // .slider__info {
+    //   background-color: #fff;
+    //   padding: 105px;
+    //   display: flex;
+    //   flex-direction: column;
+    //   &-control {
+    //     position: absolute;
+    //     left: 70px;
+    //     top: 50%;
+    //     @include transform(translateY(-50%));
+    //     .btn {
+    //       svg {
+    //         padding: 10px;
+    //       }
+    //     }
+    //   }
+    //   &-text {
+    //     display: flex;
+    //     flex-direction: column;
+    //     .title {
+    //       @include text(40px, pdb, 1.2, $text-cl, uppercase);
+    //     }
+    //     .subtitle {
+    //       margin: 20px 0;
+    //       @include text($fz-text, mb, 1.2, $green-cl, uppercase);
+    //     }
+    //     .text {
+    //       @include text(16px, mr, 1.5, $sec-text-cl, initial);
+    //     }
+    //   }
+    //   &-button {
+    //     width: 200px;
+    //     border: 2px solid $green-cl;
+    //     font-size: 13px;
+    //     text-align: center;
+    //     text-decoration: none;
+    //     font-family: mb;
+    //     padding: 15px;
+    //     margin-top: 40px;
+    //     letter-spacing: 4px;
+    //     text-transform: uppercase;
+    //   }
+    // }
+    // .slider__wrapper {
+    //   position: absolute;
+    //   right: 0;
+    //   height: 720px;
+    //   width: 50%;
+    //   .thumb0 {
+    //     overflow: hidden;
+    //     height: 100%;
+    //     width: 100%;
+    //     @include midimg(720px);
+    //   }
+    // }
+  }
+}
+.project {
+  padding-top: 0;
+  background-color: $main-bg-cl;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .project__wrapper {
+    height: 100%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-sizing: border-box;
+    gap: 0;
+    .project__wrapper-item {
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+      img {
+        @include midimg;
+        overflow: hidden;
+      }
+    }
+  }
+}
+.detail {
+  background-color: $main-bg-cl;
+  padding-top: 0;
+  position: relative;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    direction: rtl;
+    height: 720px;
+    .slider__info {
+      text-align: left;
+      .subtitle {
+        color: $text-cl;
+      }
+      &-button {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: initial;
+        @include transform(translateY(-50%));
+        @include transform(rotate(-90deg));
+      }
+    }
+    .slider__wrapper {
+      right: initial;
+      left: 0;
+      .thumb1 {
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        @include midimg;
+      }
+    }
+  }
+}
+.team {
+  background-color: $main-bg-cl;
+  padding-top: 0;
+  position: relative;
+  .container {
+    .team__wrapper {
+      margin-top: 150px;
+      display: flex;
+    }
+    .slider__info-control {
+      left: initial;
+      right: 70px;
+    }
+  }
+}
+.about {
+  background-color: $main-bg-cl;
+  padding-top: 0;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 720px;
+    .slider__info {
+      .subtitle {
+        color: $text-cl;
+        margin-bottom: initial;
+        margin-top: 30px;
+      }
+    }
+    .slider__wrapper {
+      .map {
+        height: 100%;
+        width: 100%;
+        @include midimg;
+      }
+    }
+  }
+}

@@ -1,4 +1,22 @@
 // css button, title, icon, elements...
 img {
-    max-width: 100%;
+  max-width: 100%;
+}
+.btn {
+  cursor: pointer;
+  @include transition($t);
+  svg,
+  span {
+    border: 2px solid $green-cl;
+  }
+
+  :hover {
+    background-color: $green-cl;
+    @include transition($t);
+  }
+}
+.--prev {
+  svg {
+    transform: rotate(180deg);
+  }
 }

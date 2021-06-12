@@ -1,46 +1,45 @@
 /* FONT FACE - font-display: fallback; */
 @font-face {
-    font-family: 'pdr';
-    src: url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
-        url('../fonts/PlayfairDisplay-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: fallback;
+  font-family: "pdr";
+  src: url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
-    font-family: 'pdb';
-    src: url('../fonts/PlayfairDisplay-Black.woff2') format('woff2'),
-        url('../fonts/PlayfairDisplay-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: fallback;
+  font-family: "pdb";
+  src: url("../fonts/PlayfairDisplay-Black.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
-    font-family: 'ml';
-    src: url('../fonts/Mulish-Light.woff2') format('woff2'),
-        url('../fonts/Mulish-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: fallback;
+  font-family: "ml";
+  src: url("../fonts/Mulish-Light.woff2") format("woff2"),
+    url("../fonts/Mulish-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
-    font-family: 'mr';
-    src: url('../fonts/Mulish-Regular.woff2') format('woff2'),
-        url('../fonts/Mulish-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: fallback;
+  font-family: "mr";
+  src: url("../fonts/Mulish-Regular.woff2") format("woff2"),
+    url("../fonts/Mulish-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
 }
 
 @font-face {
-    font-family: 'mb';
-    src: url('../fonts/Mulish-Black.woff2') format('woff2'),
-        url('../fonts/Mulish-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: fallback;
+  font-family: "mb";
+  src: url("../fonts/Mulish-Black.woff2") format("woff2"),
+    url("../fonts/Mulish-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: fallback;
 }
-
